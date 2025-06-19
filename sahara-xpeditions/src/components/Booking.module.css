@@ -1,0 +1,80 @@
+.bookingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.calendarWrapper {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+ 
+  font-size: 1.25rem; 
+}
+
+/* Overriding react-datepicker styles */
+.calendarWrapper :global .react-datepicker {
+  border: none;
+  font-family: inherit;
+}
+
+.calendarWrapper :global .react-datepicker__header {
+  background-color: var(--night-blue);
+  border-bottom: none;
+  padding-top: 15px;
+}
+
+.calendarWrapper :global .react-datepicker__navigation {
+  top: 15px;
+}
+
+.calendarWrapper :global .react-datepicker__current-month,
+.calendarWrapper :global .react-datepicker-time__header,
+.calendarWrapper :global .react-datepicker__day-name {
+  color: var(--sand-white);
+}
+
+.calendarWrapper :global .react-datepicker__day--selected,
+.calendarWrapper :global .react-datepicker__day--keyboard-selected {
+
+  background-color: var(--sunset-yellow);
+  
+  color: var(--night-blue);
+  font-weight: bold;
+}
+
+.calendarWrapper :global .react-datepicker__day:hover {
+  background-color: var(--sunset-yellow);
+  color: var(--night-blue);
+  border-radius: 50%;
+}
+
+
+.bookNowBtn {
+  background-color: var(--desert-orange);
+  color: var(--sand-white);
+  padding: 1.2rem 4rem; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.3rem; 
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bookNowBtn:hover {
+  background-color: #7a350c;
+  transform: scale(1.05);
+}
